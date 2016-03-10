@@ -1,6 +1,6 @@
 {
   "name": "grd",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CSS grid framework using Flexbox.",
   "scripts": {
     "build": "postcss --use postcss-apply --use cssnano --output dist/grd.css src/grd.css"
