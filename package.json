@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "A CSS grid framework using Flexbox.",
   "scripts": {
-    "build": "postcss --use postcss-apply --use cssnano --output dist/grd.css src/grd.css"
+    "build": "mkdir -p dist && postcss --use postcss-apply --use autoprefixer --use cssnano --output dist/grd.css src/grd.css"
   },
   "keywords": [
     "css",
@@ -17,6 +17,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^6.3.3",
     "cssnano": "^3.5.2",
     "postcss-apply": "^0.1.0",
     "postcss-cli": "^2.5.1"
