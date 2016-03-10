@@ -1,0 +1,24 @@
+{
+  "name": "grd",
+  "version": "1.0.0",
+  "description": "A CSS grid framework using Flexbox.",
+  "scripts": {
+    "build": "postcss --use postcss-apply --use cssnano --output dist/grd.css src/grd.css"
+  },
+  "keywords": [
+    "css",
+    "grid"
+  ],
+  "repository": "1000ch/grd",
+  "author": {
+    "name": "Shogo Sensui",
+    "email": "shogo.sensui@gmail.com",
+    "url": "https://github.com/1000ch"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "cssnano": "^3.5.2",
+    "postcss-apply": "^0.1.0",
+    "postcss-cli": "^2.5.1"
+  }
+}

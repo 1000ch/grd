@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Grd</title>
+    <link rel="stylesheet" href="dist/grd.css">
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+      .container {
+        margin: auto;
+        max-width: 960px;
+        font-size: 1.6rem;
+      }
+      .Grid > div {
+        padding: 1rem;
+        border: 1px dashed #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Grd</h1>
+      <section>
+        <h2>4/12 + 8/12</h2>
+        <div class="Grid">
+          <div class="Cell --4of12">4of12</div>
+          <div class="Cell --8of12">8of12</div>
+        </div>
+      </section>
+      <section>
+        <h2>align right + 6/12</h2>
+        <div class="Grid --right">
+          <div class="Cell --6of12">6of12</div>
+        </div>
+      </section>
+      <section>
+        <h2>2/12 + fill + 1/12</h2>
+        <div class="Grid">
+          <div class="Cell --2of12">2of12</div>
+          <div class="Cell --fill">fill</div>
+          <div class="Cell --1of12">1of12</div>
+        </div>
+      </section>
+      <section>
+        <h2>3/12 + 9/12 + 9/12 + 3/12</h2>
+        <div class="Grid">
+          <div class="Cell --3of12">3of12</div>
+          <div class="Cell --9of12">9of12</div>
+          <div class="Cell --9of12">9of12</div>
+          <div class="Cell --3of12">3of12</div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
