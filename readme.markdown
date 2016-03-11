@@ -2,10 +2,18 @@
 
 A CSS grid framework using Flexbox.
 
+- **Simple**: Provides just 2 classes Grid and Cell.
+- **Light-weight**: Only 512 bytes (Gzipped).
+- **Flexible**: Easy to use Flexbox features.
+
 ## Installation
 
 ```bash
+# via npm
 $ npm install grd
+
+# via bower
+$ bower install grd
 ```
 
 ## Usage
@@ -21,12 +29,18 @@ Grd provides 2 classes as base, `Grid` and `Cell`.
 
 ### `Grid` modifiers
 
-- `--top`: Align items to top
-- `--middle`: Align items to middle
-- `--bottom`: Align items to bottom
-- `--left`: Layout items to left
-- `--center`: Layout items to center
-- `--right`: Layout items to right
+- To align items with `align-items`
+  - `--top`: To top
+  - `--middle`: To middle
+  - `--bottom`: To bottom
+  - `--stretch`: Stretch items
+  - `--baseline`: To baseline
+- To layout contents with `justify-content`
+  - `--left`: To left
+  - `--center`: To center
+  - `--right`: To right
+  - `--between`: Add spaces between items
+  - `--around`: Add spaces around items
 
 ### `Cell` modifiers
 
