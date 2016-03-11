@@ -20,7 +20,7 @@
 .Grid.--center   { justify-content: center; }
 .Grid.--right    { justify-content: flex-end; }
 .Grid.--between  { justify-content: space-between; }
-.Grid.--arround  { justify-content: space-around; }
+.Grid.--around   { justify-content: space-around; }
 
 .Cell          { @apply --cell; }
 .Cell.--fill   { width: 0; min-width: 0; flex-grow: 1; }
