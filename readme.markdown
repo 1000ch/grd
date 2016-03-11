@@ -2,7 +2,7 @@
 
 A CSS grid framework using Flexbox.
 
-- **Simple**: Provides just 2 classes Grid and Cell.
+- **Simple**: Provides just 2 base classes `Grid` and `Cell` and some modifiers.
 - **Light-weight**: Only 512 bytes (Gzipped).
 - **Flexible**: Easy to use Flexbox features.
 
@@ -17,8 +17,6 @@ $ bower install grd
 ```
 
 ## Usage
-
-Grd provides 2 classes as base, `Grid` and `Cell`.
 
 ```html
 <div class="Grid">
