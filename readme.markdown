@@ -1,4 +1,4 @@
-# Grd
+![Grd](logo.png)
 
 A CSS grid framework using Flexbox.
 
