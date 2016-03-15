@@ -1,7 +1,6 @@
 :root {
   --grid {
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
   }
   --cell {
@@ -11,28 +10,28 @@
 }
 
 .Grid            { @apply --grid; }
-.Grid.--top      { align-items: flex-start; }
-.Grid.--middle   { align-items: center; }
-.Grid.--bottom   { align-items: flex-end; }
-.Grid.--stretch  { align-items: stretch; }
-.Grid.--baseline { align-items: baseline; }
-.Grid.--left     { justify-content: flex-start; }
-.Grid.--center   { justify-content: center; }
-.Grid.--right    { justify-content: flex-end; }
-.Grid.--between  { justify-content: space-between; }
-.Grid.--around   { justify-content: space-around; }
+.Grid.\-top      { align-items: flex-start; }
+.Grid.\-middle   { align-items: center; }
+.Grid.\-bottom   { align-items: flex-end; }
+.Grid.\-stretch  { align-items: stretch; }
+.Grid.\-baseline { align-items: baseline; }
+.Grid.\-left     { justify-content: flex-start; }
+.Grid.\-center   { justify-content: center; }
+.Grid.\-right    { justify-content: flex-end; }
+.Grid.\-between  { justify-content: space-between; }
+.Grid.\-around   { justify-content: space-around; }
 
-.Cell          { @apply --cell; }
-.Cell.--fill   { width: 0; min-width: 0; flex-grow: 1; }
-.Cell.--1of12  { width: calc(100% * 1 / 12); }
-.Cell.--2of12  { width: calc(100% * 2 / 12); }
-.Cell.--3of12  { width: calc(100% * 3 / 12); }
-.Cell.--4of12  { width: calc(100% * 4 / 12); }
-.Cell.--5of12  { width: calc(100% * 5 / 12); }
-.Cell.--6of12  { width: calc(100% * 6 / 12); }
-.Cell.--7of12  { width: calc(100% * 7 / 12); }
-.Cell.--8of12  { width: calc(100% * 8 / 12); }
-.Cell.--9of12  { width: calc(100% * 9 / 12); }
-.Cell.--10of12 { width: calc(100% * 10 / 12); }
-.Cell.--11of12 { width: calc(100% * 11 / 12); }
-.Cell.--12of12 { width: 100%; }
+.Cell            { @apply --cell; }
+.Cell.\-fill     { width: 0; min-width: 0; flex-grow: 1; }
+.Cell.\-1of12    { width: calc(100% * 1 / 12); }
+.Cell.\-2of12    { width: calc(100% * 2 / 12); }
+.Cell.\-3of12    { width: calc(100% * 3 / 12); }
+.Cell.\-4of12    { width: calc(100% * 4 / 12); }
+.Cell.\-5of12    { width: calc(100% * 5 / 12); }
+.Cell.\-6of12    { width: calc(100% * 6 / 12); }
+.Cell.\-7of12    { width: calc(100% * 7 / 12); }
+.Cell.\-8of12    { width: calc(100% * 8 / 12); }
+.Cell.\-9of12    { width: calc(100% * 9 / 12); }
+.Cell.\-10of12   { width: calc(100% * 10 / 12); }
+.Cell.\-11of12   { width: calc(100% * 11 / 12); }
+.Cell.\-12of12   { width: 100%; }
