@@ -35,3 +35,8 @@
 .Cell.\-10of12   { width: calc(100% * 10 / 12); }
 .Cell.\-11of12   { width: calc(100% * 11 / 12); }
 .Cell.\-12of12   { width: 100%; }
+.Cell.\-top      { align-self: flex-start; }
+.Cell.\-middle   { align-self: center; }
+.Cell.\-bottom   { align-self: flex-end; }
+.Cell.\-stretch  { align-self: stretch; }
+.Cell.\-baseline { align-self: baseline; }
