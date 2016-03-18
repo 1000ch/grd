@@ -27,6 +27,7 @@
       .Grid {
         margin: 1rem;
         padding: 1rem;
+        min-height: 200px;
         border: 1px solid #ccc;
       }
       .Grid > .Cell {
@@ -78,7 +79,7 @@ $ bower install grd</code></pre>
       </div>
       <div class="Grid" id="grid"></div>
       <template id="template-cell">
-        <div class="Cell">
+        <div class="Cell" contenteditable>
           <select class="select-sm">
             <option value="" selected>-</option>
             <option value="-fill">-fill</option>
