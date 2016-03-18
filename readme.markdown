@@ -6,6 +6,8 @@ A CSS grid framework using Flexbox.
 - **Light-weight**: Only 512 bytes (Gzipped).
 - **Flexible**: Easy to use Flexbox features.
 
+[Flexible Box Layout Module](http://caniuse.com/#search=flex) and [`calc()` as CSS unit value](http://caniuse.com/#search=calc) used in Grd are available on modern browsers (Chrome, Firefox, Safari, Opera, Edge and IE11).
+
 ## Installation
 
 ```bash
