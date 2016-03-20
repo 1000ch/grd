@@ -1,12 +1,12 @@
 :root {
-  --grid {
+  --grid: {
     display: flex;
     flex-wrap: wrap;
-  }
-  --cell {
+  };
+  --cell: {
     box-sizing: border-box;
     flex-shrink: 0;
-  }
+  };
 }
 
 .Grid            { @apply --grid; }
