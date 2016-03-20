@@ -1,6 +1,6 @@
 {
   "name": "grd",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "A CSS grid framework using Flexbox.",
   "scripts": {
     "build": "mkdir -p dist && postcss --use postcss-apply --use autoprefixer --use postcss-csso --output dist/grd.css src/grd.css"
