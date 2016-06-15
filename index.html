@@ -3,26 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Grd - A CSS grid framework using Flexbox</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/9.2.0/styles/github.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/9.4.0/styles/github.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Mono:400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
     <link rel="stylesheet" href="dist/grd.css">
     <style>
-      html {
-        font-family: "Roboto", sans-serif;
-      }
+      html { font-family: "Roboto", sans-serif; }
+      code { font-family: "Roboto Mono", monospace; }
+      .container { margin: auto; max-width: 960px; }
+      a { text-decoration: none; color: #199ad5; }
+      a:hover, a:active { color: #e2007a; }
+      a code { color: #199ad5 !important; }
+      a:hover code, a:active code { color: #e2007a !important; }
       h1 > img {
         width: 100%;
         max-width: 480px;
-      }
-      code {
-        color: #333;
-        background: #f8f8f8;
-        font-family: "Roboto Mono", monospace;
-      }
-      .container {
-        margin: auto;
-        max-width: 960px;
       }
       .Grid {
         margin: 1rem;
@@ -139,7 +135,7 @@ $ bower install grd</code></pre>
         add.click();
       });
     </script>
-    <script src="https://cdn.jsdelivr.net/highlight.js/9.2.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/highlight.js/9.4.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
