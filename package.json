@@ -3,7 +3,8 @@
   "version": "1.2.3",
   "description": "A CSS grid framework using Flexbox.",
   "scripts": {
-    "build": "mkdir -p dist && postcss --use postcss-apply --use autoprefixer --use postcss-csso --output dist/grd.css src/grd.css"
+    "build": "mkdir -p dist && postcss --use postcss-apply --use autoprefixer --use postcss-csso --output dist/grd.css src/grd.css",
+    "build:sass": "node-sass src/grd.scss dist/grd.css && postcss --use autoprefixer --use postcss-csso --output dist/grd.css dist/grd.css"
   },
   "keywords": [
     "css",
@@ -19,6 +20,7 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.3.3",
+    "node-sass": "^3.8.0",
     "postcss-apply": "^0.2.0",
     "postcss-cli": "^2.5.1",
     "postcss-csso": "^1.0.1"
