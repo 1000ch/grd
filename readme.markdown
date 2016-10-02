@@ -1,5 +1,7 @@
 ![Grd](logo.png)
 
+![](https://badge-size.herokuapp.com/1000ch/grd/gh-pages/dist/grd.css.svg?compression=gzip)
+
 A CSS grid framework using Flexbox.
 
 - **Simple**: Provides just 2 base classes `Grid` and `Cell` and some modifiers.
