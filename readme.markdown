@@ -3,7 +3,7 @@
 A CSS grid framework using Flexbox.
 
 - **Simple**: Provides just 2 base classes `Grid` and `Cell` and some modifiers.
-- **Light-weight**: Only 512 bytes (Gzipped).
+- **Light-weight**: Only 501 bytes (Gzipped).
 - **Flexible**: Easy to use Flexbox features.
 
 [Flexible Box Layout Module](http://caniuse.com/#search=flex) and [`calc()` as CSS unit value](http://caniuse.com/#search=calc) used in Grd are available on modern browsers (Chrome, Firefox, Safari, Opera, Edge and IE11).
