@@ -10,7 +10,9 @@ A CSS grid framework using Flexbox.
 
 [Flexible Box Layout Module](http://caniuse.com/#search=flex) and [`calc()` as CSS unit value](http://caniuse.com/#search=calc) used in Grd are available on modern browsers (Chrome, Firefox, Safari, Opera, Edge and IE11).
 
-## Installation
+If you want to use Grd with Sass, you can choose [grd-sass](https://github.com/1000ch/grd-sass) as Sass port.
+
+## Install
 
 ```bash
 # via npm
