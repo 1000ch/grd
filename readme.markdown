@@ -1,6 +1,6 @@
 ![Grd](logo.png)
 
-![](https://badge-size.herokuapp.com/1000ch/grd/master/dist/grd.css.svg?compression=gzip)
+![](https://badge-size.herokuapp.com/1000ch/grd/master/grd.css.svg?compression=gzip)
 [![devDependency Status](https://david-dm.org/1000ch/grd/dev-status.svg)](https://david-dm.org/1000ch/grd?type=dev)
 
 A CSS grid framework using Flexbox.
