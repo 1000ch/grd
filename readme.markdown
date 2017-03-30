@@ -33,34 +33,39 @@ $ bower install grd
 
 ### `Grid` modifiers
 
-- To align items with `align-items`
-  - `-top`: To top
-  - `-middle`: To middle
-  - `-bottom`: To bottom
-  - `-stretch`: Stretch items
-  - `-baseline`: To baseline
-- To layout contents with `justify-content`
-  - `-left`: To left
-  - `-center`: To center
-  - `-right`: To right
-  - `-between`: Add spaces between items
-  - `-around`: Add spaces around items
+| Vertical layout | Description |
+|---|---|
+| `-top` | Pull items to top |
+| `-middle` |  Pull items to middle |
+| `-bottom` |  Pull items to bottom |
+| `-stretch` | Stretch items |
+| `-baseline` |  Pull items to baseline |
+
+| Horizontal layout | Description |
+|---|---|
+| `-left` | Layout items to left |
+| `-center` | Layout items To center |
+| `-right` | Layout items to right |
+| `-between` | Add spaces between items |
+| `-around` | Add spaces around items |
 
 ### `Cell` modifiers
 
-- `-fill`: Set item width to left width of parent
-- `-1of12`: Set item width to 8.3% of parent
-- `-2of12`: Set item width to 16.7% of parent
-- `-3of12`: Set item width to 25% of parent
-- `-4of12`: Set item width to 33% of parent
-- `-5of12`: Set item width to 41.7% of parent
-- `-6of12`: Set item width to 50% of parent
-- `-7of12`: Set item width to 58.3% of parent
-- `-8of12`: Set item width to 66.7% of parent
-- `-9of12`: Set item width to 75% of parent
-- `-10of12`: Set item width to 83.3% of parent
-- `-11of12`: Set item width to 91.7% of parent
-- `-12of12`: Set item width to 100% of parent
+| Cell width | Description |
+|---|---|
+| `-fill` | Set item width to left |
+| `-1of12` | Set item width to 8.3% |
+| `-2of12` | Set item width to 16.7% |
+| `-3of12` | Set item width to 25% |
+| `-4of12` | Set item width to 33% |
+| `-5of12` | Set item width to 41.7% |
+| `-6of12` | Set item width to 50% |
+| `-7of12` | Set item width to 58.3% |
+| `-8of12` | Set item width to 66.7% |
+| `-9of12` | Set item width to 75% |
+| `-10of12` | Set item width to 83.3% |
+| `-11of12` | Set item width to 91.7% |
+| `-12of12` | Set item width to 100% |
 
 ## License
 
