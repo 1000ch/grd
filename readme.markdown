@@ -1,11 +1,12 @@
 ![Grd](logo.png)
 
 ![](https://badge-size.herokuapp.com/1000ch/grd/master/dist/grd.css.svg?compression=gzip)
+[![devDependency Status](https://david-dm.org/1000ch/grd/dev-status.svg)](https://david-dm.org/1000ch/grd?type=dev)
 
 A CSS grid framework using Flexbox.
 
 - **Simple**: Provides just 2 base classes `Grid` and `Cell` and some modifiers.
-- **Light-weight**: Only 501 bytes (Gzipped).
+- **Light-weight**: Only 321 bytes (Gzipped).
 - **Flexible**: Easy to use Flexbox features.
 
 [Flexible Box Layout Module](http://caniuse.com/#search=flex) and [`calc()` as CSS unit value](http://caniuse.com/#search=calc) used in Grd are available on modern browsers (Chrome, Firefox, Safari, Opera, Edge and IE11).
@@ -14,11 +15,15 @@ If you want to use Grd with Sass, you can choose [grd-sass](https://github.com/1
 
 ## Install
 
-```bash
-# via npm
-$ npm install grd
+### npm
 
-# via bower
+```bash
+$ npm install grd
+```
+
+### bower
+
+```bash
 $ bower install grd
 ```
 
