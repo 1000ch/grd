@@ -10,7 +10,7 @@
     "url": "https://github.com/1000ch"
   },
   "scripts": {
-    "build": "postcss --use postcss-apply --use autoprefixer --use cssnano --output grd.css src/grd.css"
+    "build": "postcss --no-map --use postcss-apply --use autoprefixer --use cssnano --output grd.css src/grd.css"
   },
   "main": "grd.css",
   "style": "grd.css",
@@ -25,10 +25,10 @@
     "flexbox"
   ],
   "devDependencies": {
-    "autoprefixer": "^6.7.7",
+    "autoprefixer": "^7.0.0",
     "cssnano": "^3.10.0",
     "postcss-apply": "^0.6.1",
-    "postcss-cli": "^3.0.0"
+    "postcss-cli": "^3.2.0"
   },
   "browserslist": [
     "ie 11"
