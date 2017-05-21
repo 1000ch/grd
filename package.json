@@ -27,8 +27,8 @@
   "devDependencies": {
     "autoprefixer": "^7.0.0",
     "cssnano": "^3.10.0",
-    "postcss-apply": "^0.6.1",
-    "postcss-cli": "^3.2.0"
+    "postcss-apply": "^0.7.0",
+    "postcss-cli": "^4.0.0"
   },
   "browserslist": [
     "ie 11"
