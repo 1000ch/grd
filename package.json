@@ -25,10 +25,10 @@
     "flexbox"
   ],
   "devDependencies": {
-    "autoprefixer": "^7.2.5",
+    "autoprefixer": "^8.0.0",
     "cssnano": "^3.10.0",
     "postcss-apply": "^0.8.0",
-    "postcss-cli": "^4.1.1"
+    "postcss-cli": "^5.0.0"
   },
   "browserslist": [
     "ie 11"
