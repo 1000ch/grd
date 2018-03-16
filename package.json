@@ -10,7 +10,7 @@
     "url": "https://github.com/1000ch"
   },
   "scripts": {
-    "build": "postcss --no-map --use postcss-apply --use autoprefixer --use cssnano --output grd.css src/grd.css"
+    "build": "postcss --no-map --use autoprefixer --use cssnano --output grd.css src/grd.css"
   },
   "main": "grd.css",
   "style": "grd.css",
@@ -27,7 +27,6 @@
   "devDependencies": {
     "autoprefixer": "^8.0.0",
     "cssnano": "^3.10.0",
-    "postcss-apply": "^0.8.0",
     "postcss-cli": "^5.0.0"
   },
   "browserslist": [

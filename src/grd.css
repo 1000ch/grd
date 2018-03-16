@@ -1,15 +1,4 @@
-:root {
-  --grid: {
-    display: flex;
-    flex-wrap: wrap;
-  };
-  --cell: {
-    box-sizing: border-box;
-    flex-shrink: 0;
-  };
-}
-
-.Grid            { @apply --grid; }
+.Grid            { display: flex; flex-wrap: wrap; }
 .Grid.\-top      { align-items: flex-start; }
 .Grid.\-middle   { align-items: center; }
 .Grid.\-bottom   { align-items: flex-end; }
@@ -21,7 +10,7 @@
 .Grid.\-between  { justify-content: space-between; }
 .Grid.\-around   { justify-content: space-around; }
 
-.Cell            { @apply --cell; }
+.Cell            { box-sizing: border-box; flex-shrink: 0; }
 .Cell.\-fill     { width: 0; min-width: 0; flex-grow: 1; }
 .Cell.\-1of12    { width: calc(100% * 1 / 12); }
 .Cell.\-2of12    { width: calc(100% * 2 / 12); }
