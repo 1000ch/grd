@@ -10,6 +10,7 @@
     "url": "https://github.com/1000ch"
   },
   "scripts": {
+    "prepublish": "npm run build",
     "build": "postcss --no-map --use autoprefixer --use cssnano --output grd.css src/grd.css"
   },
   "main": "grd.css",
