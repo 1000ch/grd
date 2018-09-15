@@ -11,8 +11,18 @@
   },
   "scripts": {
     "prepublishOnly": "npm run build",
-    "build": "postcss --no-map --use autoprefixer --use cssnano --output grd.css src/grd.css"
+    "build": "postcss --output grd.css src/grd.css"
   },
+  "postcss": {
+    "map": false,
+    "plugins": {
+      "autoprefixer": true,
+      "cssnano": true
+    }
+  },
+  "browserslist": [
+    "ie 11"
+  ],
   "main": "grd.css",
   "style": "grd.css",
   "files": [
@@ -29,8 +39,5 @@
     "autoprefixer": "^9.0.0",
     "cssnano": "^4.0.0",
     "postcss-cli": "^6.0.0"
-  },
-  "browserslist": [
-    "ie 11"
-  ]
+  }
 }
