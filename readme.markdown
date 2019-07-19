@@ -15,16 +15,8 @@ If you want to use Grd with Sass, you can choose [grd-sass](https://github.com/1
 
 ## Install
 
-### npm
-
 ```bash
-$ npm install grd
-```
-
-### bower
-
-```bash
-$ bower install grd
+npm install grd
 ```
 
 ## Usage

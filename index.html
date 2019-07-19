@@ -4,29 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Grd - A CSS grid framework using Flexbox</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/9.4.0/styles/github.min.css">
     <link rel="stylesheet" href="src/grd.css">
     <style>
-      body { font-family: Roboto, Helvetica, Arial, sans-serif; }
-      code { font-family: "Roboto Mono", "Source Code Pro", Consolas, "Courier New", monospace; }
-      .container { margin: auto; max-width: 960px; }
-      a { text-decoration: none; color: #199ad5; }
-      a:hover, a:active { color: #e2007a; }
-      a code { color: #199ad5 !important; }
-      a:hover code, a:active code { color: #e2007a !important; }
+      body, code {
+        font-family: Menlo, monospace;
+        font-size: 16px;
+      }
+
+      .container {
+        margin: auto;
+        padding: 16px;
+        max-width: 960px;
+      }
+
       h1 > img {
         width: 100%;
         max-width: 480px;
-      }
-      .Grid {
-        margin: 1rem;
-        padding: 1rem;
-        min-height: 200px;
-        border: 1px solid #ccc;
-      }
-      .Grid > .Cell {
-        padding: 1rem;
-        border: 1px dashed #ccc;
       }
     </style>
   </head>
@@ -39,25 +34,13 @@
       <p>A CSS grid framework using Flexbox.</p>
       <ul>
         <li><strong>Simple</strong>: Provides just 2 base classes <code>Grid</code> and <code>Cell</code> and some modifiers.</li>
-        <li><strong>Light-weight</strong>: <u>Only 321 bytes</u> (Gzipped). <img src="https://badge-size.herokuapp.com/1000ch/grd/master/grd.css.svg?compression=gzip"></li>
+        <li><strong>Light-weight</strong>: <u>Only 321 bytes</u> (Gzipped).</li>
         <li><strong>Flexible</strong>: Easy to use Flexbox features.</li>
       </ul>
       <p><a href="http://caniuse.com/#search=flex">Flexible Box Layout Module</a> and <a href="http://caniuse.com/#search=calc"><code>calc()</code> as CSS unit value</a> used in Grd are available on modern browsers (Chrome, Firefox, Safari, Opera, Edge and IE11).</p>
-      <h2>Install</h2>
-      <h3>npm</h3>
-      <pre><code class="bash">$ npm install grd</code></pre>
-      <h3>bower</h3>
-      <pre><code class="bash">$ bower install grd</code></pre>
-      <h2>Usage</h2>
-      <pre><code class="html">&lt;div class=&quot;Grid&quot;&gt;
-  &lt;div class=&quot;Cell -3of12&quot;&gt;3of12&lt;/div&gt;
-  &lt;div class=&quot;Cell -9of12&quot;&gt;9of12&lt;/div&gt;
-&lt;/div&gt;</code></pre>
       <h2>Live Demo</h2>
-      <div>
-        <button id="add" class="btn" type="button">Add item</button>
-        <button id="remove" class="btn" type="button">Remove item</button>
-        <select id="align-items">
+      <div style="margin-bottom: 16px;">
+        &lt;div class=&quot;Grid <select id="align-items">
           <option value="" selected>-</option>
           <option value="-top">-top</option>
           <option value="-middle">-middle</option>
@@ -72,12 +55,17 @@
           <option value="-right">-right</option>
           <option value="-between">-between</option>
           <option value="-around">-around</option>
-        </select>
+        </select>&quot;&gt;
       </div>
-      <div class="Grid" id="grid"></div>
+      <div class="Grid" id="grid" style="min-height: 240px;"></div>
+      <div style="margin-top: 16px;">
+        &lt;/div&gt;
+        <button id="add" class="btn" type="button">Add a cell</button>
+        <button id="remove" class="btn" type="button">Remove a cell</button>
+      </div>
       <template id="template-cell">
-        <div class="Cell" contenteditable>
-          <select class="select-sm">
+        <div class="Cell" style="padding: 16px; border: 1px dashed #999;">
+          &lt;div class=&quot;Cell <select class="select-sm">
             <option value="" selected>-</option>
             <option value="-fill">-fill</option>
             <option value="-1of12">-1of12</option>
@@ -92,9 +80,20 @@
             <option value="-10of12">-10of12</option>
             <option value="-11of12">-11of12</option>
             <option value="-12of12">-12of12</option>
-          </select>
+          </select>&quot;&gt;
+          <p contenteditable="true">(click to edit)</p>
+          &lt;/div&gt;
         </div>
       </template>
+      <h2>Install</h2>
+      <pre><code class="bash">npm install grd</code></pre>
+      <h2>Usage</h2>
+      <pre><code class="html">&lt;div class=&quot;Grid&quot;&gt;
+  &lt;div class=&quot;Cell -3of12&quot;&gt;3of12&lt;/div&gt;
+  &lt;div class=&quot;Cell -9of12&quot;&gt;9of12&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      <h2>License</h2>
+      <p><a href="https://1000ch.mit-license.org" rel="nofollow">MIT</a> © <a href="https://github.com/1000ch">Shogo Sensui</a></p>
     </div>
     <a href="https://github.com/1000ch/grd" class="github-corner"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     <script>
