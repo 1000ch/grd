@@ -36,8 +36,8 @@
     "flexbox"
   ],
   "devDependencies": {
-    "autoprefixer": "^9.0.0",
-    "cssnano": "^4.0.0",
-    "postcss-cli": "^6.0.0"
+    "autoprefixer": "^9.8.0",
+    "cssnano": "^4.1.0",
+    "postcss-cli": "^7.1.0"
   }
 }
