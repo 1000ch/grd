@@ -3,10 +3,13 @@
   "version": "1.4.0",
   "description": "A CSS grid framework using Flexbox.",
   "license": "MIT",
-  "repository": "1000ch/grd",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:1000ch/grd.git"
+  },
   "author": {
     "name": "Shogo Sensui",
-    "email": "shogo.sensui@gmail.com",
+    "email": "shogosensui@gmail.com",
     "url": "https://github.com/1000ch"
   },
   "scripts": {
