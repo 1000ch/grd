@@ -16,16 +16,6 @@
     "prepublishOnly": "npm run build",
     "build": "postcss --output grd.css src/grd.css"
   },
-  "postcss": {
-    "map": false,
-    "plugins": {
-      "autoprefixer": true,
-      "cssnano": true
-    }
-  },
-  "browserslist": [
-    "ie 11"
-  ],
   "main": "grd.css",
   "style": "grd.css",
   "files": [
@@ -39,8 +29,7 @@
     "flexbox"
   ],
   "devDependencies": {
-    "autoprefixer": "^10.3.4",
     "cssnano": "^5.0.8",
-    "postcss-cli": "^8.3.1"
+    "postcss-cli": "^9.1.0"
   }
 }
