@@ -29,7 +29,7 @@
     "flexbox"
   ],
   "devDependencies": {
-    "cssnano": "^5.0.8",
+    "cssnano": "^5.0.16",
     "postcss-cli": "^9.1.0"
   }
 }
