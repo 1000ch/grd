@@ -14,14 +14,14 @@
   },
   "scripts": {
     "prepublishOnly": "npm run build",
-    "build": "postcss --output grd.css src/grd.css"
+    "build": "postcss --output grd.min.css grd.css"
   },
-  "main": "grd.css",
-  "style": "grd.css",
+  "main": "grd.min.css",
+  "style": "grd.min.css",
   "files": [
     "grd.css",
-    "license",
-    "src"
+    "grd.min.css",
+    "license"
   ],
   "keywords": [
     "css",

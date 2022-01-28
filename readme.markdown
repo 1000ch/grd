@@ -1,4 +1,4 @@
-# grd ![""](https://badge-size.herokuapp.com/1000ch/grd/master/src/grd.css.svg?compression=gzip)
+# grd ![""](https://badge-size.herokuapp.com/1000ch/grd/main/grd.min.css.svg?compression=gzip)
 
 ![""](./logo.png)
 
