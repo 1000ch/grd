@@ -3,32 +3,25 @@
   "version": "1.4.0",
   "description": "A CSS grid framework using Flexbox.",
   "license": "MIT",
-  "repository": "1000ch/grd",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:1000ch/grd.git"
+  },
   "author": {
     "name": "Shogo Sensui",
-    "email": "shogo.sensui@gmail.com",
+    "email": "shogosensui@gmail.com",
     "url": "https://github.com/1000ch"
   },
   "scripts": {
     "prepublishOnly": "npm run build",
-    "build": "postcss --output grd.css src/grd.css"
+    "build": "postcss --output grd.min.css grd.css"
   },
-  "postcss": {
-    "map": false,
-    "plugins": {
-      "autoprefixer": true,
-      "cssnano": true
-    }
-  },
-  "browserslist": [
-    "ie 11"
-  ],
-  "main": "grd.css",
-  "style": "grd.css",
+  "main": "grd.min.css",
+  "style": "grd.min.css",
   "files": [
     "grd.css",
-    "license",
-    "src"
+    "grd.min.css",
+    "license"
   ],
   "keywords": [
     "css",
@@ -36,8 +29,7 @@
     "flexbox"
   ],
   "devDependencies": {
-    "autoprefixer": "^9.0.0",
-    "cssnano": "^4.0.0",
-    "postcss-cli": "^6.0.0"
+    "cssnano": "^5.0.16",
+    "postcss-cli": "^9.1.0"
   }
 }
