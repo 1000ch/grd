@@ -1,26 +1,100 @@
-.Grid            { display: flex; flex-wrap: wrap; }
-.Grid.\-top      { align-items: flex-start; }
-.Grid.\-middle   { align-items: center; }
-.Grid.\-bottom   { align-items: flex-end; }
-.Grid.\-stretch  { align-items: stretch; }
-.Grid.\-baseline { align-items: baseline; }
-.Grid.\-left     { justify-content: flex-start; }
-.Grid.\-center   { justify-content: center; }
-.Grid.\-right    { justify-content: flex-end; }
-.Grid.\-between  { justify-content: space-between; }
-.Grid.\-around   { justify-content: space-around; }
+/**
+ * $sm: 576px;
+ * $md: 768px;
+ * $lg: 992px;
+ * $xl: 1200px;
+ **/
 
-.Cell            { box-sizing: border-box; flex-shrink: 0; }
-.Cell.\-fill     { width: 0; min-width: 0; flex-grow: 1; }
-.Cell.\-1of12    { width: calc(100% * 1 / 12); }
-.Cell.\-2of12    { width: calc(100% * 2 / 12); }
-.Cell.\-3of12    { width: calc(100% * 3 / 12); }
-.Cell.\-4of12    { width: calc(100% * 4 / 12); }
-.Cell.\-5of12    { width: calc(100% * 5 / 12); }
-.Cell.\-6of12    { width: calc(100% * 6 / 12); }
-.Cell.\-7of12    { width: calc(100% * 7 / 12); }
-.Cell.\-8of12    { width: calc(100% * 8 / 12); }
-.Cell.\-9of12    { width: calc(100% * 9 / 12); }
-.Cell.\-10of12   { width: calc(100% * 10 / 12); }
-.Cell.\-11of12   { width: calc(100% * 11 / 12); }
-.Cell.\-12of12   { width: 100%; }
+ .Grid            { display: flex; flex-wrap: wrap; }
+ .Grid.\-top      { align-items: flex-start; }
+ .Grid.\-middle   { align-items: center; }
+ .Grid.\-bottom   { align-items: flex-end; }
+ .Grid.\-stretch  { align-items: stretch; }
+ .Grid.\-baseline { align-items: baseline; }
+ .Grid.\-left     { justify-content: flex-start; }
+ .Grid.\-center   { justify-content: center; }
+ .Grid.\-right    { justify-content: flex-end; }
+ .Grid.\-between  { justify-content: space-between; }
+ .Grid.\-around   { justify-content: space-around; }
+ 
+ .Cell            { box-sizing: border-box; flex-shrink: 0; }
+ .Cell.\-fill     { width: 0; min-width: 0; flex-grow: 1; }
+ .Cell.\-1of12    { width: calc(100% * 1 / 12); }
+ .Cell.\-2of12    { width: calc(100% * 2 / 12); }
+ .Cell.\-3of12    { width: calc(100% * 3 / 12); }
+ .Cell.\-4of12    { width: calc(100% * 4 / 12); }
+ .Cell.\-5of12    { width: calc(100% * 5 / 12); }
+ .Cell.\-6of12    { width: calc(100% * 6 / 12); }
+ .Cell.\-7of12    { width: calc(100% * 7 / 12); }
+ .Cell.\-8of12    { width: calc(100% * 8 / 12); }
+ .Cell.\-9of12    { width: calc(100% * 9 / 12); }
+ .Cell.\-10of12   { width: calc(100% * 10 / 12); }
+ .Cell.\-11of12   { width: calc(100% * 11 / 12); }
+ .Cell.\-12of12   { width: 100%; }
+ 
+ .Cell            { box-sizing: border-box; }
+ 
+ @media (min-width: 576px) {
+   .Cell.\-sm-fill     { width: 0; min-width: 0; flex-grow: 1; }
+   .Cell.\-sm-1of12    { width: calc(100% * 1 / 12); }
+   .Cell.\-sm-2of12    { width: calc(100% * 2 / 12); }
+   .Cell.\-sm-3of12    { width: calc(100% * 3 / 12); }
+   .Cell.\-sm-4of12    { width: calc(100% * 4 / 12); }
+   .Cell.\-sm-5of12    { width: calc(100% * 5 / 12); }
+   .Cell.\-sm-6of12    { width: calc(100% * 6 / 12); }
+   .Cell.\-sm-7of12    { width: calc(100% * 7 / 12); }
+   .Cell.\-sm-8of12    { width: calc(100% * 8 / 12); }
+   .Cell.\-sm-9of12    { width: calc(100% * 9 / 12); }
+   .Cell.\-sm-10of12   { width: calc(100% * 10 / 12); }
+   .Cell.\-sm-11of12   { width: calc(100% * 11 / 12); }
+   .Cell.\-sm-12of12   { width: 100%; }
+ }
+ 
+ @media (min-width: 768px) {
+   .Cell.\-md-fill     { width: 0; min-width: 0; flex-grow: 1; }
+   .Cell.\-md-1of12    { width: calc(100% * 1 / 12); }
+   .Cell.\-md-2of12    { width: calc(100% * 2 / 12); }
+   .Cell.\-md-3of12    { width: calc(100% * 3 / 12); }
+   .Cell.\-md-4of12    { width: calc(100% * 4 / 12); }
+   .Cell.\-md-5of12    { width: calc(100% * 5 / 12); }
+   .Cell.\-md-6of12    { width: calc(100% * 6 / 12); }
+   .Cell.\-md-7of12    { width: calc(100% * 7 / 12); }
+   .Cell.\-md-8of12    { width: calc(100% * 8 / 12); }
+   .Cell.\-md-9of12    { width: calc(100% * 9 / 12); }
+   .Cell.\-md-10of12   { width: calc(100% * 10 / 12); }
+   .Cell.\-md-11of12   { width: calc(100% * 11 / 12); }
+   .Cell.\-md-12of12   { width: 100%; }
+ }
+ 
+ @media (min-width: 992px) {
+   .Cell.\-lg-fill     { width: 0; min-width: 0; flex-grow: 1; }
+   .Cell.\-lg-1of12    { width: calc(100% * 1 / 12); }
+   .Cell.\-lg-2of12    { width: calc(100% * 2 / 12); }
+   .Cell.\-lg-3of12    { width: calc(100% * 3 / 12); }
+   .Cell.\-lg-4of12    { width: calc(100% * 4 / 12); }
+   .Cell.\-lg-5of12    { width: calc(100% * 5 / 12); }
+   .Cell.\-lg-6of12    { width: calc(100% * 6 / 12); }
+   .Cell.\-lg-7of12    { width: calc(100% * 7 / 12); }
+   .Cell.\-lg-8of12    { width: calc(100% * 8 / 12); }
+   .Cell.\-lg-9of12    { width: calc(100% * 9 / 12); }
+   .Cell.\-lg-10of12   { width: calc(100% * 10 / 12); }
+   .Cell.\-lg-11of12   { width: calc(100% * 11 / 12); }
+   .Cell.\-lg-12of12   { width: 100%; }
+ }
+ 
+ @media (min-width: 1200px) {
+   .Cell.\-xl-fill     { width: 0; min-width: 0; flex-grow: 1; }
+   .Cell.\-xl-1of12    { width: calc(100% * 1 / 12); }
+   .Cell.\-xl-2of12    { width: calc(100% * 2 / 12); }
+   .Cell.\-xl-3of12    { width: calc(100% * 3 / 12); }
+   .Cell.\-xl-4of12    { width: calc(100% * 4 / 12); }
+   .Cell.\-xl-5of12    { width: calc(100% * 5 / 12); }
+   .Cell.\-xl-6of12    { width: calc(100% * 6 / 12); }
+   .Cell.\-xl-7of12    { width: calc(100% * 7 / 12); }
+   .Cell.\-xl-8of12    { width: calc(100% * 8 / 12); }
+   .Cell.\-xl-9of12    { width: calc(100% * 9 / 12); }
+   .Cell.\-xl-10of12   { width: calc(100% * 10 / 12); }
+   .Cell.\-xl-11of12   { width: calc(100% * 11 / 12); }
+   .Cell.\-xl-12of12   { width: 100%; }
+ }
+ 
