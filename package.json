@@ -30,6 +30,6 @@
   ],
   "devDependencies": {
     "cssnano": "^5.0.16",
-    "postcss-cli": "^9.1.0"
+    "postcss-cli": "^10.1.0"
   }
 }
