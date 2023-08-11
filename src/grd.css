@@ -24,3 +24,11 @@
 .Cell.\-10of12   { width: calc(100% * 10 / 12); }
 .Cell.\-11of12   { width: calc(100% * 11 / 12); }
 .Cell.\-12of12   { width: 100%; }
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	height: 100%;
+	/*set height due to other cells, could manage height of this Cell. So setting it to 100% should set the cell, to only maintain it's current content.*/
+}
